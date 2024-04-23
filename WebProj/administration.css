@@ -1,0 +1,132 @@
+/* Basic reset for specific styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #003366, #0066cc); /* Dark to lighter blue gradient */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0055cc; /* Lighter blue for hover effect */
+    border-radius: 5px;
+}
+
+.section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login {
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto;
+    width: 60%; /* Adjusted for better fit */
+    background-color: #e6f0ff; /* Very light blue background */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="password"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%; /* Adjust for better fit */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #003366; /* Dark blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0055cc;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static; /* changed from fixed for better mobile handling */
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Stack nav items */
+    }
+
+    .login {
+        width: 80%; /* Makes the login form wider on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section, .login {
+        margin: 10px;
+        padding: 15px;
+        width: 95%; /* Use more of the screen for content */
+    }
+
+    input[type="text"], input[type="password"], button {
+        width: 100%; /* Maximize use of available width */
+    }
+}

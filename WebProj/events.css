@@ -1,0 +1,42 @@
+/* Specific styles for the events page */
+.event {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.event img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.event h2 {
+    margin: 0 0 10px 0;
+    color: #003366; /* Dark blue to align with school colors */
+}
+
+.event p {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

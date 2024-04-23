@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunivass Secondary School - Administration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="administration.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="hunivasslogo.png" alt="Hunivass School Logo" class="school-logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="administration.html">Administration</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admission.html">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login">
+        <h3>Staff Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+    
+    <section id="staff">
+        <h2>Staff Information</h2>
+        <p>Details about our dedicated teaching and non-teaching staff, their qualifications and roles.</p>
+    </section>
+    <section id="security">
+        <h2>Security System</h2>
+        <p>Our comprehensive security system includes CCTV installations across the campus, secured posts at all entrances, and emergency alarms in every building.</p>
+    </section>
+    <section id="boarding">
+        <h2>Boarding Facilities</h2>
+        <p>We provide high-quality boarding facilities for both male and female students, featuring comfortable living quarters, study areas, and 24/7 supervision.</p>
+    </section>
+    <section id="religion">
+        <h2>Religious Services</h2>
+        <p>We support religious diversity with services for Christians, Muslims, and adherents of traditional faiths, ensuring all students can practice their beliefs.</p>
+    </section>
+    <section id="groups">
+        <h2>Student Groups</h2>
+        <p>Engage with our vibrant student groups: SRC, IT Student Union, Science Club, and Chefs Club.</p>
+    </section>
+
+    <footer>
+        © 2024 Hunivass Secondary School
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

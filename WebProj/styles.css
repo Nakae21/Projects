@@ -1,0 +1,134 @@
+/*Main Page css - index.html*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+header {
+    background: linear-gradient(to right, #003366, #0066cc); /* Dark to lighter blue gradient */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container img.school-logo {
+    height: 50px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+    animation: fadeIn 2s;
+}
+#gallery {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #fff;
+}
+#gallery img {
+    width: 450px;
+    height: 350px;
+    margin-right: 10px;
+    transition: transform 0.5s ease;
+}
+#gallery img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Stack nav items */
+        display: block; /* Stack navigation links */
+        margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Slightly smaller text sizes */
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .event, .section {
+        padding: 10px;
+        margin: 10px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for mobile phones */
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .event, .section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}

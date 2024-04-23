@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Hunivass Secondary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="hunivasslogo.png" alt="Hunivass School Logo" class="school-logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="administration.html">Administration</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admission.html">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="procedures">
+            <h2>Admission Procedures</h2>
+            <p>To apply, submit the following documents: application form, medical history, and previous academic records. Ensure that all documents are verified and submitted before the deadline.</p>
+            <a href="files/admission.pdf" target="_blank" class="download-button">Download Application Form</a>
+        </section>
+
+        <section id="cut-off">
+            <h2>Cut Off Points</h2>
+            <p>Minimum academic standards are set for each program. Visit our website or contact admissions for more details.</p>
+        </section>
+
+        <section id="forms">
+            <h2>Apply Now</h2>
+            <form id="admissionForm">
+                <input type="text" id="applicantName" placeholder="Applicant's Name" required>
+                <input type="email" id="applicantEmail" placeholder="Email" required>
+                <textarea id="applicantMessage" placeholder="Write your inquiry here..."></textarea>
+                <div class="file-upload">
+                    <label for="applicationForm">Application Form (PDF):</label>
+                    <input type="file" id="applicationForm" accept=".pdf" required>
+                </div>
+                <div class="file-upload">
+                    <label for="medicalHistory">Medical History (PDF):</label>
+                    <input type="file" id="medicalHistory" accept=".pdf" required>
+                </div>
+                <div class="file-upload">
+                    <label for="academicRecords">Academic Records (PDF):</label>
+                    <input type="file" id="academicRecords" accept=".pdf" required>
+                </div>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hunivass Secondary School. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
