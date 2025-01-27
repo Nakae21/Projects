@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo a img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #004b5a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    color: #003e47;
+    font-size: 36px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 20px;
+    background-color: white;
+}
+
+.rooms h2 {
+    text-align: center;
+    color: #003e47;
+    margin-bottom: 20px;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.room {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.room h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.room p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.room button {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room button:hover {
+    background-color: #003e47;
+}
+
+/* Booking Form Section */
+.booking-form {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form h2 {
+    text-align: center;
+    color: #003e47;
+    margin-bottom: 20px;
+}
+
+.booking-form form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.booking-form form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.booking-form form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form form button {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.booking-form form button:hover {
+    background-color: #003e47;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Available Room */
+.room.available {
+    background-color: white;
+    cursor: pointer;
+}
+
+.room.available button {
+    background-color: #005f73;
+    color: white;
+}
+
+.room.available button:hover {
+    background-color: #003e47;
+}
+
+/* Unavailable Room (Greyed Out) */
+.room.unavailable {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+.room.unavailable button {
+    background-color: #888;
+    color: #ccc;
+    cursor: not-allowed;
+}
